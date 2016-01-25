@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_details_more"
+        android:layout_alignParentTop="true">
+
+    </android.support.v4.view.ViewPager>
+
+    <ImageButton
+        android:id="@+id/ibtn_details_back"
+        style="@style/title_ibtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/back_circle_gray" />
+
+    <LinearLayout
+        android:id="@+id/ll_details_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/lightgrey"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibtn_details_info"
+            style="@style/title_ibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/more_info_while" />
+
+        <TextView
+            android:id="@+id/tv_details_info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="卖家商圈"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size16" />
+
+        <Button
+            android:id="@+id/btn_details_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/space_12"
+            android:background="@drawable/comment_btn_bg"
+            android:textColor="@color/white"
+            android:text="联系卖家" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_title_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_details_more"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/grey_alph"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/viewGroup_padding">
+
+        <RadioGroup
+            android:id="@+id/radiogroup_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/viewGroup_padding">
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_details_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size14" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="url">http://121.199.38.74:8080/wxq/apiServer.do</string>
+    <string name="url_getHotGroupList">getGroupList</string>               <!--获取热门推荐 opcode-->
+    <string name="url_getAttentionGroupList">getConcernGroupList</string>               <!--获取关注的群 opcode-->
+    <string name="url_getCreateGroupList">getMyGroupList</string>               <!--获取创建的群 opcode-->
+    <string name="url_createGroup">createGroup</string>                     <!--创建群 opcode-->
+    <string name="url_getWxqGroupTypeListForIndex">getWxqGroupTypeListForIndex</string>         <!--获取群类型opcode-->
+    <string name="url_getWxqGroupTypeList">getWxqGroupTypeList</string>         <!--获取群类型,无分页opcode-->
+    <string name="url_getMomentsList">getMomentsList</string>              <!--获取好友圈opcode-->
+    <string name="url_publishMoments">publishMoments</string>              <!--上传好友圈opcode-->
+    <string name="url_addMomentsLike">addMomentsLike</string>               <!--好友圈点赞opcode-->
+    <string name="url_addMomentsComment">addMomentsComment</string>             <!--朋友圈添加评论opcode-->
+    <string name="url_getMyMomentsList">getMyMomentsList</string>           <!--获取我发布的好友圈opcode-->
+    <string name="url_getGroupListByCondition">getGroupListByCondition</string>  <!--根据条件搜索群opcode-->
+</resources>

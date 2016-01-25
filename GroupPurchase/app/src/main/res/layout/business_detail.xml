@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_layout" android:id="@+id/title" />
+
+    <include layout="@layout/business_recyclerview_item" android:layout_below="@id/title"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_space"
+        android:layout_width="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_comment"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:padding="@dimen/table_space"
+        android:background="@color/white">
+        <EditText
+            android:id="@+id/et_comment"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="请输入评论内容"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/normal_space"
+            android:background="@drawable/comment_edit_bg"
+            android:layout_margin="@dimen/table_space"/>
+        <Button
+            android:id="@+id/btn_comment"
+            android:layout_width="@dimen/space_60"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size16"
+            android:background="@drawable/comment_btn_bg"
+            android:layout_marginLeft="@dimen/table_space"
+            android:text="@string/send"/>
+    </LinearLayout>
+</RelativeLayout>

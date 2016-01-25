@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_business_item_comment_header"
+        android:layout_width="@dimen/business_item_love_height"
+        android:layout_height="@dimen/business_item_love_height"
+        android:layout_marginRight="@dimen/space_12"/>
+    <TextView
+        android:id="@+id/tv_business_item_comment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size14"
+        android:text="傅旭东"
+        android:layout_toRightOf="@id/iv_business_item_comment_header"
+        android:textColor="@color/yellow"/>
+    <TextView
+        android:id="@+id/tv_business_item_comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_business_item_comment_name"
+        android:text="评论"
+        android:layout_toRightOf="@id/iv_business_item_comment_header"
+        android:textSize="@dimen/text_size14"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/tv_business_item_comment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/text_size14"
+        android:textColor="@color/gray"
+        android:layout_marginRight="@dimen/space_12"
+        android:text="1月5日"/>
+</RelativeLayout>

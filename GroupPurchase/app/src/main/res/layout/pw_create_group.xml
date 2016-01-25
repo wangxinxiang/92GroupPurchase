@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+    <Button
+        android:id="@+id/btn_creategroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/findgroup_creategroup"
+        android:textColor="@color/white"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingLeft="@dimen/space_20"
+        android:paddingRight="@dimen/space_20"
+        android:textSize="@dimen/text_size16"/>
+</LinearLayout>

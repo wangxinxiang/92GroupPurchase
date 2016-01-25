@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">GroupPurchase</string>
+    <string name="activity_main">MainActivity</string>
+    <string name="activity_login">Login</string>
+    <string name="activity_tribeInfo">TribeInfo</string>
+
+    <string name="activity_goodsDetails">activity_goodsDetails</string>
+
+    <string name="find_group_et_search">关键字搜索</string>
+    <string name="findgroup_viewpager_01">二手</string>
+    <string name="findgroup_viewpager_02">海淘</string>
+    <string name="findgroup_viewpager_03">微商</string>
+    <string name="findgroup_viewpager_04">女人</string>
+    <string name="findgroup_viewpager_05">母婴</string>
+    <string name="findgroup_viewpager_06">辣妈</string>
+    <string name="findgroup_viewpager_07">娱乐</string>
+    <string name="findgroup_viewpager_08">健康</string>
+    <string name="main_tab_searchgroup">找群</string>
+    <string name="main_tab_info">消息</string>
+    <string name="main_tab_business">好友圈</string>
+    <string name="main_tab_me">我的</string>
+
+
+    <!--来自demo包的文字内容-->
+    <string name="title_activity_at_msg_list">AtMsgListActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="quit_confirm">退出后您将收不到新消息通知，是否确认退出？</string>
+    <string name="guest_login">账号不存在，是否以游客方式登录？</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="setting_sound">声音提醒</string>
+    <string name="setting_vibration">振动提醒</string>
+    <string name="setting_nodisturb_dsc">消息免打扰</string>
+    <string name="title_activity_test_activity1">TestActivity1</string>
+    <string name="title_activity_test_activity2">TestActivity2</string>
+    <string name="title_activity_tribe_members">TribeMembersActivity</string>
+    <string name="title_activity_tribe_info">TribeInfoActivity</string>
+    <string name="title_activity_seacher_tribe">SeacherTribeActivity</string>
+    <string name="title_activity_edit_tribe_info">EditTribeInfoActivity</string>
+    <string name="title_activity_invite_tribe_member">InviteTribeMemberActivity</string>
+
+    <string name="search_friend_hint">账号</string>
+    <string name="search">搜索</string>
+    <string name="net_null">哎呀，怎么没网络了，请联网后试试！</string>
+    <string name="search_friend_not_found">该用户不存在</string>
+    <string name="search_friend_not_found_message">无法找到该用户，请检查输入的帐号是否正确</string>
+    <string name="search_friend_processing">正在为您查找</string>
+    <string name="send_msg">发送消息</string>
+    <string name="add_friend">添加好友</string>
+    <string name="remark_name">昵 称: </string>
+    <string name="profile_account">账 号: </string>
+
+    <string name="title_activity_system_message">SystemMessageActivity</string>
+
+    <string-array name="pref_config_tcms_storage_titles">
+        <item>In Settings(public)</item>
+        <item>In externalStorage(public)</item>
+        <item>In preference(private)</item>
+    </string-array>
+    <string-array name="pref_config_tcms_storage_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string name="pref_header_general">测试设置</string>
+    <string name="title_activity_contact_setting">ContactSettingActivity</string>
+    <string name="title_activity_tribe_msg_rec_type_set">TribeMsgRecTypeSetActivity</string>
+    <string name="fragment_me_title">我的</string>
+    <string name="me_collect">收藏的商品</string>
+    <string name="me_attention_person">关注的人</string>
+    <string name="me_attention_group">关注的群</string>
+    <string name="me_create_group">创建的群</string>
+    <string name="me_wallet">钱包</string>
+    <string name="me_seller">我是卖家</string>
+    <string name="me_buyer">我是买家</string>
+    <string name="fg_business_title">好友圈</string>
+    <string name="business_item_delete">删除</string>
+    <string name="hot_group">热门推荐</string>
+    <string name="attention_group">关注的群</string>
+    <string name="create_group">创建的群</string>
+    <string name="account_balance">账户余额</string>
+    <string name="wallet_recharge">我要充值</string>
+    <string name="wallet_draw">我要提现</string>
+    <string name="wallet_card">我的银行卡</string>
+    <string name="wallet_password">支付密码</string>
+    <string name="recharge_money">金额</string>
+    <string name="weixin">微信支付</string>
+    <string name="zhifubao">支付宝支付</string>
+    <string name="yinlian">银联支付</string>
+    <string name="beifu">贝付支付</string>
+    <string name="findgroup_creategroup">创建我的群</string>
+    <string name="group_cover">上传群封面</string>
+    <string name="group_name">群名</string>
+    <string name="group_kind">分类</string>
+    <string name="select_group_kind">请选择群分类</string>
+    <string name="group_host_check">群主审核</string>
+    <string name="group_notice">描述这是一个怎样的群</string>
+    <string name="send">发送</string>
+    <string name="contact_seller">联系卖家</string>
+    <string name="myBusiness">我的相册</string>
+    <!--来自demo包的文字内容-->
+
+
+</resources>

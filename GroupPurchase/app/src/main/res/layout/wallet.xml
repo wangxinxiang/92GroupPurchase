@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/linegray">
+    <include layout="@layout/title_layout"/>
+
+    <LinearLayout
+        android:id="@+id/ll_wallet_balance"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_90"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/space_30"
+        android:paddingRight="@dimen/normal_space">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wallet_account"/>
+        <TextView
+            style="@style/wallet_text"
+            android:layout_weight="0.4"
+            android:text="@string/account_balance"/>
+
+        <TextView
+            style="@style/wallet_text"
+            android:id="@+id/tv_wallet_money"
+            android:text="￥ 1524"
+            android:textColor="@color/yellow"/>
+        <ImageView
+            style="@style/me_enter_image" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_80"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wallet_safety"/>
+        <TextView
+            style="@style/me_tv_comment"
+            android:text="账户安全保障中"
+            android:layout_marginLeft="@dimen/table_space"
+            android:textColor="@color/green"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_wallet_recharge"
+        style="@style/me_item.margin1">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/me_buyer"
+            android:padding="@dimen/normal_space"/>
+        <TextView
+            style="@style/me_tv_comment"
+            android:text="@string/wallet_recharge"
+            android:layout_weight="1"/>
+        <ImageView
+            style="@style/me_enter_image" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_wallet_draw"
+        style="@style/me_item.margin1">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/me_seller"
+            android:padding="@dimen/normal_space"/>
+        <TextView
+            style="@style/me_tv_comment"
+            android:text="@string/wallet_draw"
+            android:layout_weight="1"/>
+        <ImageView
+            style="@style/me_enter_image"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_wallet_card"
+        style="@style/me_item">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wallet_bank"
+            android:padding="@dimen/normal_space"/>
+        <TextView
+            style="@style/me_tv_comment"
+            android:text="@string/wallet_card"
+            android:layout_weight="1"/>
+        <ImageView
+            style="@style/me_enter_image"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_wallet_password"
+        style="@style/me_item.margin1">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wallet_password"
+            android:padding="@dimen/normal_space"/>
+        <TextView
+            style="@style/me_tv_comment"
+            android:text="@string/wallet_password"
+            android:layout_weight="1"/>
+        <ImageView
+            style="@style/me_enter_image"/>
+    </LinearLayout>
+</LinearLayout>

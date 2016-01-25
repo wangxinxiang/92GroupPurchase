@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="@dimen/table_space">
+
+        <RadioButton
+            android:id="@+id/rbtn_firstpage"
+            style="@style/main_table"
+            android:text="@string/main_tab_searchgroup"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_findgroup_selector" />
+
+        <RadioButton
+            android:id="@+id/rbtn_exchange"
+            style="@style/main_table"
+            android:text="@string/main_tab_info"
+            android:drawableTop="@drawable/tab_info_selector" />
+
+        <RadioButton
+            android:id="@+id/rbtn_business"
+            style="@style/main_table"
+            android:text="@string/main_tab_business"
+            android:drawableTop="@drawable/tab_business_selector" />
+
+        <RadioButton
+            android:id="@+id/rbtn_me"
+            style="@style/main_table"
+            android:text="@string/main_tab_me"
+            android:drawableTop="@drawable/tab_me_selector" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/radiogroup"/>
+</RelativeLayout>

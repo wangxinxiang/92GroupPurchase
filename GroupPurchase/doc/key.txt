@@ -1,0 +1,11 @@
+Ö´ÐÐÁ¦key store
+password                 jhlc5173
+alias                        92qg
+first and last name    92qg
+organization unit       5173_zxl
+organization             5173_zxl
+city                          zhejiangjinhua
+state                        jinhua
+code                        CN
+
+

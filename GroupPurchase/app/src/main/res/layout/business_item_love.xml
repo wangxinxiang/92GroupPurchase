@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/more_line_color"/>
+    <LinearLayout
+        android:id="@+id/ll_business_item_love"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/space_7"
+        android:paddingBottom="@dimen/space_7">
+        <ImageView
+            android:id="@+id/iv_business_item_kind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_12"
+            android:src="@drawable/comment"/>
+
+        <com.jhlc.grouppurchase.view.FlowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fl_business_item_love"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+</LinearLayout>

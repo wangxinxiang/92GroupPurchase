@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_bg"
+    android:orientation="horizontal">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_group_img"
+        android:layout_width="@dimen/space_60"
+        android:layout_height="@dimen/space_60"
+        android:layout_marginBottom="@dimen/space_7"
+        android:layout_marginLeft="@dimen/space_12"
+        android:layout_marginRight="@dimen/space_12"
+        android:layout_marginTop="@dimen/space_7" />
+
+
+    <TextView
+        android:id="@+id/tv_group_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_group_img"
+        android:layout_marginTop="@dimen/table_space"
+        android:layout_toRightOf="@id/iv_group_img"
+        android:text="标题"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size16" />
+
+    <TextView
+        android:id="@+id/tv_group_signature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_group_title"
+        android:layout_below="@id/tv_group_title"
+        android:layout_marginTop="@dimen/table_space"
+        android:maxLines="1"
+        android:text="signature" />
+
+    
+</RelativeLayout>

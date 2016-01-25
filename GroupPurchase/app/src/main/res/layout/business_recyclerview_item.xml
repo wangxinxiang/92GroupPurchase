@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_business_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/space_12"
+    android:background="@drawable/item_bg">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_business_item_header"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="@dimen/space_48"
+        android:layout_height="@dimen/space_48"
+        android:layout_marginRight="@dimen/space_7"/>
+    <TextView
+        android:id="@+id/tv_business_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="傅旭东"
+        android:textSize="@dimen/text_size16"
+        android:textColor="@color/yellow"
+        android:layout_toRightOf="@id/iv_business_item_header"
+        android:layout_marginBottom="@dimen/space_7"/>
+    <TextView
+        android:id="@+id/tv_business_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="这里是内容"
+        android:textSize="@dimen/text_size14"
+        android:layout_alignLeft="@id/tv_business_item_name"
+        android:layout_below="@id/tv_business_item_name"
+        android:layout_marginBottom="@dimen/space_12"/>
+
+    <com.jhlc.grouppurchase.view.FlowLayout
+        android:id="@+id/ll_business_item_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+
+        android:layout_alignLeft="@id/tv_business_item_content"
+        android:layout_below="@id/tv_business_item_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/ll_business_item_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/ll_business_item_photo"
+        android:layout_below="@id/ll_business_item_photo"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/space_7">
+        <TextView
+            android:id="@+id/tv_business_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lightgrey"
+            android:text="1月4日 15:13"/>
+        <TextView
+            android:id="@+id/tv_business_item_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/business_item_delete"
+            android:textColor="@color/yellow"
+            android:layout_marginLeft="@dimen/space_7"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/ib_business_item_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/comment"
+            android:background="@null"
+            android:layout_marginRight="@dimen/normal_space"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/space_15"
+            android:background="@color/lightgrey"
+            android:layout_marginRight="@dimen/normal_space"/>
+
+        <ImageButton
+            android:id="@+id/ib_business_item_love"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/love"
+            android:layout_marginRight="@dimen/normal_space"
+            android:background="@null"/>
+       <LinearLayout
+           android:id="@+id/tv_business_item_contact"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <View
+               android:layout_width="1dp"
+               android:layout_height="@dimen/space_15"
+               android:background="@color/lightgrey"
+               android:layout_marginRight="@dimen/normal_space"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/contact_seller"
+               android:textColor="@color/yellow"/>
+       </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_business_item_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/ll_business_item_info"
+        android:paddingTop="@dimen/space_12"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:background="@drawable/comment_bg"/>
+
+</RelativeLayout>

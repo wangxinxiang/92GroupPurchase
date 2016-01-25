@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+    <include layout="@layout/title_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_12"
+            android:text="@string/group_cover"
+            android:textSize="@dimen/text_size16" />
+
+        <ImageView
+            android:id="@+id/iv_creategroup_ico"
+            android:layout_width="@dimen/space_70"
+            android:layout_height="@dimen/space_70"
+            android:src="@drawable/create_group_ico"
+            android:layout_marginLeft="@dimen/space_12"
+            android:layout_marginBottom="@dimen/space_12"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/create_group_item"
+        android:layout_marginTop="@dimen/normal_space">
+        <TextView
+            style="@style/me_tv_comment"
+            android:text="@string/group_name"/>
+        <EditText
+            android:id="@+id/edit_group_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/normal_space"
+            android:background="@null"/>
+    </LinearLayout>
+    <LinearLayout
+        style="@style/create_group_groupType">
+        <TextView
+            style="@style/me_tv_comment"
+            android:text="@string/group_kind"
+            android:layout_weight="1"/>
+        <TextView
+            style="@style/me_tv_comment"
+            android:text="@string/select_group_kind"
+            android:textColor="@color/lightgrey"/>
+        <Spinner
+            android:id="@+id/spinner_group_kind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/space_15"
+            android:paddingRight="@dimen/space_15"/>
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--style="@style/create_group_item">-->
+        <!--<TextView-->
+            <!--style="@style/me_tv_comment"-->
+            <!--android:text="@string/group_host_check"-->
+            <!--android:layout_weight="1"/>-->
+        <!--<CheckBox-->
+            <!--android:id="@+id/check_group_host_check"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:button="@drawable/radio_check_selector"/>-->
+    <!--</LinearLayout>-->
+
+    <EditText
+        android:id="@+id/et_group_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/line_height"
+        android:minHeight="@dimen/space_100"
+        android:gravity="left"
+        android:hint="@string/group_notice"
+        android:padding="@dimen/space_15"
+        android:textColorHint="@color/lightgrey"
+        android:textSize="@dimen/text_size16"
+        android:background="@color/white"/>
+</LinearLayout>

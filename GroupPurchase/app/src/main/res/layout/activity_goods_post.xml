@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_layout"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="left"
+        android:id="@+id/edit_goods_info"
+        android:hint="请描述一下商品信息..."
+        android:padding="@dimen/btn_padding"
+        />
+    <com.jhlc.grouppurchase.view.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/flow_group"
+        >
+
+    </com.jhlc.grouppurchase.view.FlowLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll_goods_location"
+        android:paddingLeft="@dimen/btn_padding"
+        android:paddingRight="@dimen/btn_padding"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/title_ibtn"
+            android:id="@+id/ibtn_goods_location"
+            android:src="@drawable/location_gray"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_goods_location"
+            android:maxLines="1"
+            android:gravity="center|left"
+            android:textSize="@dimen/text_size18"
+            android:textColor="@color/black"
+            android:text="金华"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+
+    <include layout="@layout/title_layout" />
+
+    <RelativeLayout
+        style="@style/me_item">
+        <ImageView
+            android:id="@+id/iv_me_head"
+            android:layout_width="@dimen/item_image_size"
+            android:layout_height="@dimen/item_image_size"
+            android:layout_marginRight="@dimen/space_7"/>
+        <TextView
+            android:id="@+id/tv_me_name"
+            android:layout_toRightOf="@id/iv_me_head"
+            style="@style/me_tv_comment"
+            android:paddingTop="@dimen/space_7"
+            android:paddingBottom="@dimen/text_space"
+            android:text="王"/>
+        <TextView
+            android:id="@+id/tv_me_praise"
+            style="@style/me_tv_comment.size16"
+            android:text="被点赞"
+            android:layout_below="@id/tv_me_name"
+            android:layout_toRightOf="@id/iv_me_head"/>
+        <ImageView
+            style="@style/me_enter_image"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/me_item.padding0">
+        <LinearLayout
+           style="@style/me_group_item"
+            android:id="@+id/ll_me_collect">
+            <TextView
+                android:id="@+id/tv_me_collect"
+                style="@style/me_tv_comment.yellow"
+                android:text="23" />
+            <TextView
+               style="@style/me_tv_comment.size16"
+                android:text="@string/me_collect"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/me_group_item"
+            android:id="@+id/ll_me_attention_person">
+            <TextView
+                android:id="@+id/tv_me_attention_person"
+                style="@style/me_tv_comment.yellow"
+                android:text="23" />
+            <TextView
+                style="@style/me_tv_comment.size16"
+                android:text="@string/me_attention_person"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/me_group_item"
+            android:id="@+id/ll_me_attention_group">
+            <TextView
+                android:id="@+id/tv_me_attention_group"
+                style="@style/me_tv_comment.yellow"
+                android:text="23" />
+            <TextView
+                style="@style/me_tv_comment.size16"
+                android:text="@string/me_attention_group"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/me_group_item"
+            android:id="@+id/ll_me_group"
+            android:layout_marginRight="0dp">
+            <TextView
+                android:id="@+id/tv_me_group"
+                style="@style/me_tv_comment.yellow"
+                android:text="23" />
+            <TextView
+                style="@style/me_tv_comment.size16"
+                android:text="@string/me_create_group"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/me_wallet"
+        style="@style/me_item">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/me_wallet"
+            android:padding="@dimen/normal_space"/>
+        <TextView
+            style="@style/me_tv_comment"
+            android:text="@string/me_wallet"
+            android:layout_weight="1"/>
+        <TextView
+            style="@style/me_tv_comment"
+            android:id="@+id/tv_me_money"
+            android:textColor="@color/black"
+            android:text="￥136"/>
+        <ImageView
+            style="@style/me_enter_image"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/me_seller"
+        style="@style/me_item">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/me_seller"
+            android:padding="@dimen/normal_space"/>
+        <TextView
+            style="@style/me_tv_comment"
+            android:text="@string/me_seller"
+            android:layout_weight="1"/>
+        <ImageView
+            style="@style/me_enter_image"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/me_buyer"
+        style="@style/me_item"
+        android:layout_marginTop="@dimen/line_height">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/me_buyer"
+            android:padding="@dimen/normal_space"/>
+        <TextView
+            style="@style/me_tv_comment"
+            android:text="@string/me_buyer"
+            android:layout_weight="1"/>
+        <ImageView
+            style="@style/me_enter_image" />
+    </LinearLayout>
+
+</LinearLayout>
